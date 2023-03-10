@@ -12,8 +12,7 @@ export default function App() {
     console.log('hello')
   };
 
-  // using use effect here because of pressing two keys at the same time
-
+  // using use effect here because of
   useEffect(() => {
     if (shiftKey && enterKey) {
       showToast();

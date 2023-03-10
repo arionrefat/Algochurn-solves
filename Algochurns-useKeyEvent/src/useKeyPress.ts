@@ -16,7 +16,7 @@ export default function useKeyPress(targetKey: any) {
     });
 
     return () => {
-      // cleanup function to make sure there is not eventLister added
+      // cleanup function to make sure there is not eventLister added before
       document.removeEventListener('keydown', ({ key }: any) => {
         if (key == targetKey) {
           setKeyPressed(true);
